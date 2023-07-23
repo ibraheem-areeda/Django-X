@@ -1,0 +1,9 @@
+{% extends '_base.html'%}
+{% block content %}
+<h1>item details</h1>
+<h2>{{item.name}}</h2>
+<h2>{{item.price}}</h2>
+<h2><a href="{%url 'items' %}">home page</a></h2>
+<h2><a href="{%url 'item_update'  item.id %}">update item</a></h2>
+<h2><a href="{%url 'item_delete'  item.id %}">delete item</a></h2>
+{% endblock %}

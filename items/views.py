@@ -15,7 +15,7 @@ class ItemDetailView (DetailView):
 class ItemCreateView (CreateView):
     template_name = 'items/items_create.html'
     model = item
-    fields = ['name','price']
+    fields = ['name','price','purcheser']
 
 class ItemUpdateView (UpdateView):
     template_name = 'items/items_update.html'

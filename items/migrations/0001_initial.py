@@ -16,6 +16,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=64)),
+                ('purcheser', models.ForeignKey(CustomUser, on_delete=models.CASCADE))
                 ('price', models.IntegerField(default=1)),
             ],
         ),

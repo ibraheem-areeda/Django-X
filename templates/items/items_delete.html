@@ -1,0 +1,11 @@
+{% extends '_base.html'%}
+{% block content %}
+<h1>{{snack.name}} delete</h1>
+<h3>are you sure that you want to delete {{snack.name}}</h3>
+<form method="post">
+{% csrf_token %}
+
+    <input type="submit">
+</form>
+<h2><a href="{%url 'item_details' item.id %}"> back to item details</a></h2>
+{% endblock %}

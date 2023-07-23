@@ -1,0 +1,11 @@
+{% extends '_base.html'%}
+{% block content %}
+<h1>{{item.name}} update</h1>
+
+<form method="post">
+{% csrf_token %}
+{{form.as_p}}
+    <input type="submit">
+</form>
+<h2><a href="{%url 'item_details' item.id %}"> back to item details</a></h2>
+{% endblock %}
